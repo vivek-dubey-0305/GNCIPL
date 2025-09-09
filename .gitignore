@@ -1,0 +1,64 @@
+# ========================================
+# Node.js
+# ========================================
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+
+# ========================================
+# Logs
+# ========================================
+logs
+*.log
+*.log.*
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# ========================================
+# Env files
+# ========================================
+**/.env
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+
+# ========================================
+# Build outputs
+# ========================================
+# Vite / React build outputs
+**/frontend/dist/
+**/frontend/.vite/
+
+# Backend build/temp (future transpilers)
+**/backend/build/
+**/backend/dist/
+**/backend/.cache/
+
+# ========================================
+# IDE & OS junk
+# ========================================
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ========================================
+# Coverage / Testing
+# ========================================
+coverage/
+.nyc_output/
+
+# ========================================
+# Misc
+# ========================================
+*.tgz
+*.tar.gz

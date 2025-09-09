@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-store - Online Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Header with logo and cart -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-shopping-bag"></i>
+                <span>e-store</span>
+            </div>
+            <div class="cart-icon" id="cart-icon">
+                <i class="fas fa-shopping-cart fa-lg"></i>
+                <span class="cart-count">3</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Overlay for when cart is open -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Filters section -->
+        <aside class="filters">
+            <h2>Filters</h2>
+            
+            <div class="filter-group">
+                <h3>Categories</h3>
+                <div class="filter-options">
+                    <label>
+                        <input type="checkbox" checked> Electronics
+                    </label>
+                    <label>
+                        <input type="checkbox"> Clothing
+                    </label>
+                    <label>
+                        <input type="checkbox"> Home & Kitchen
+                    </label>
+                    <label>
+                        <input type="checkbox"> Books
+                    </label>
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <h3>Price Range</h3>
+                <div class="price-range">
+                    <input type="range" min="0" max="1000" value="500">
+                    <div>$0 - $500</div>
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <h3>Brand</h3>
+                <div class="filter-options">
+                    <label>
+                        <input type="checkbox"> Samsung
+                    </label>
+                    <label>
+                        <input type="checkbox"> Apple
+                    </label>
+                    <label>
+                        <input type="checkbox"> Sony
+                    </label>
+                    <label>
+                        <input type="checkbox"> LG
+                    </label>
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <h3>Rating</h3>
+                <div class="filter-options">
+                    <label>
+                        <input type="checkbox"> 4★ & above
+                    </label>
+                    <label>
+                        <input type="checkbox"> 3★ & above
+                    </label>
+                    <label>
+                        <input type="checkbox"> 2★ & above
+                    </label>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Products section -->
+        <section class="products">
+            <div class="products-header">
+                <h2>All Products</h2>
+                <div class="sort-options">
+                    <select>
+                        <option>Sort by: Recommended</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Rating</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <article class="product-card">
+                    <img src="https://www.skullcandy.eu/cdn/shop/files/push_play_active_buy_box_black_orange_1.png?v=1752271573" alt="Wireless Headphones" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Wireless Headphones</h3>
+                        <div class="product-price">$129.99</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </article>
+                
+                <!-- Product 2 -->
+                <article class="product-card">
+                    <img src="https://images.samsung.com/is/image/samsung/p6pim/in/2407/gallery/in-galaxy-watch7-l300-sm-l300nzgains-thumb-542366932?$UX_EXT2_PNG$" alt="Smart Watch" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Smart Watch</h3>
+                        <div class="product-price">$199.99</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </article>
+                
+                <!-- Product 3 -->
+                <article class="product-card">
+                    <img src="https://www.skullcandy.eu/cdn/shop/files/ounce_buy_box_black_1_5c0f19f8-9be5-47e2-8e7d-8fba21fd3e17.png?v=1752271683" alt="Bluetooth Speaker" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Bluetooth Speaker</h3>
+                        <div class="product-price">$79.99</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </article>
+                
+                <!-- Product 4 -->
+                <article class="product-card">
+                    <img src="https://phonewraps.in/cdn/shop/files/4_c758de3f-fdc0-455d-82d7-c16a21413793.jpg?v=1751146415&width=1946" alt="Phone Case" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Phone Case</h3>
+                        <div class="product-price">$24.99</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </article>
+                
+                <!-- Product 5 -->
+                <article class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/61l5a94VKkL._UF1000,1000_QL80_.jpg" alt="Tablet" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Tablet</h3>
+                        <div class="product-price">$329.99</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </article>
+                
+                <!-- Product 6 -->
+                <article class="product-card">
+                    <img src="https://honeywellconnection.com/in/wp-content/uploads/2024/08/main-image-4.jpg" alt="Wireless Charger" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Wireless Charger</h3>
+                        <div class="product-price">$39.99</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cart sidebar -->
+    <aside class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" id="close-cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="cart-items">
+            <!-- Cart Item 1 -->
+            <div class="cart-item">
+                <img src="https://via.placeholder.com/80x80/4a6fa5/ffffff?text=HP" alt="Headphones" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h4 class="cart-item-title">Wireless Headphones</h4>
+                    <div class="cart-item-price">$129.99</div>
+                    <div class="cart-item-actions">
+                        <button class="quantity-btn">-</button>
+                        <span>1</span>
+                        <button class="quantity-btn">+</button>
+                        <button class="remove-item">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cart Item 2 -->
+            <div class="cart-item">
+                <img src="https://via.placeholder.com/80x80/6fa54a/ffffff?text=SW" alt="Smart Watch" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h4 class="cart-item-title">Smart Watch</h4>
+                    <div class="cart-item-price">$199.99</div>
+                    <div class="cart-item-actions">
+                        <button class="quantity-btn">-</button>
+                        <span>1</span>
+                        <button class="quantity-btn">+</button>
+                        <button class="remove-item">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cart Item 3 -->
+            <div class="cart-item">
+                <img src="https://via.placeholder.com/80x80/a54a6f/ffffff?text=SP" alt="Speaker" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h4 class="cart-item-title">Bluetooth Speaker</h4>
+                    <div class="cart-item-price">$79.99</div>
+                    <div class="cart-item-actions">
+                        <button class="quantity-btn">-</button>
+                        <span>1</span>
+                        <button class="quantity-btn">+</button>
+                        <button class="remove-item">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cart-total">
+            Total: $409.97
+        </div>
+        
+        <button class="checkout-btn">Proceed to Checkout</button>
+    </aside>
+
+<script src="scripts.js"></script>
+</body>
+</html>
