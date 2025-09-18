@@ -10,6 +10,7 @@ const LobbyScreen = () => {
   const socket = useSocket();
   const navigate = useNavigate();
 
+  // *Unnecessay renders are saved via useCallback
   const handleSubmitForm = useCallback(
     (e) => {
       e.preventDefault();

@@ -1,0 +1,29 @@
+{
+  "name": "excel-analytics-backend",
+  "version": "1.0.0",
+  "description": "A MERN-based analytics platform for uploading and parsing Excel files, dynamically mapping data, and generating interactive 2D/3D charts with user authentication, dashboard history, and optional AI-powered insights.",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^2.7.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.0",
+    "multer": "^2.0.2",
+    "nodemailer": "^7.0.6",
+    "sheetjs": "^2.0.0",
+    "validator": "^13.15.15",
+    "xlsx": "^0.18.5"
+  }
+}
